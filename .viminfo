@@ -9,6 +9,7 @@
 ~h
 # Command Line History (newest to oldest):
 :x
+:z
 :X
 :w
 :wq
@@ -26,18 +27,20 @@
 	i
 
 # File marks:
-'0  1  26  ~/myapp/newfile
-'1  2  31  ~/myapp/pfile
-'2  1  1  ~/myapp/pfile
-'3  1  58  ~/myapp/comfile
-'4  1  0  ~/myapp/.gitignore
-'5  9  5  ~/myapp/.gitignore
-'6  8  10  ~/myapp/.gitignore
-'7  1  4  ~/myapp/index1.html
-'8  7  6  ~/myapp/.gitignore
-'9  6  6  ~/myapp/.gitignore
+'0  5  37  ~/myfile1
+'1  1  0  ~/myfile1
+'2  1  26  ~/myapp/newfile
+'3  2  31  ~/myapp/pfile
+'4  1  1  ~/myapp/pfile
+'5  1  58  ~/myapp/comfile
+'6  1  0  ~/myapp/.gitignore
+'7  9  5  ~/myapp/.gitignore
+'8  8  10  ~/myapp/.gitignore
+'9  1  4  ~/myapp/index1.html
 
 # Jumplist (newest first):
+-'  5  37  ~/myfile1
+-'  1  0  ~/myfile1
 -'  1  26  ~/myapp/newfile
 -'  2  31  ~/myapp/pfile
 -'  1  1  ~/myapp/pfile
@@ -134,10 +137,14 @@
 -'  1  0  ~/file4
 -'  3  0  ~/myapp/file1
 -'  1  0  ~/myapp/file1
--'  3  0  ~/myapp/file1
--'  1  0  ~/myapp/file1
 
 # History of marks within files (newest to oldest):
+
+> ~/myfile1
+	"	5	37
+	^	5	38
+	.	5	37
+	+	5	37
 
 > ~/myapp/newfile
 	"	1	26
