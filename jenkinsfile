@@ -17,10 +17,13 @@ stage('compiling')
 
 stage('test')
 {
+ try
+ {
     withMaven(maven:'MyMaven')
     {
     sh 'mvn test'
 }
+ }
  finally {
  junit 'target/surefire-reports/*.xml'
  }
