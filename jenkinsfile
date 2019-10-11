@@ -21,6 +21,9 @@ stage('test')
     {
     sh 'mvn test'
 }
+ finally {
+ junit 'target/surefire-reports/*.xml'
+ }
 }
 stage('package')
 {
