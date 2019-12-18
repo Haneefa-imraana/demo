@@ -1,0 +1,39 @@
+#!/usr/bin/env groovy
+import java.net.URL
+
+node{
+ 
+    stage('git checkout')
+    {
+            git 'https://github.com/edureka-git/DevOpsClassCodes.git'
+}
+stage('compiling')
+{
+    withMaven(maven:'MyMaven')
+    {
+    sh 'mvn compile'
+}
+}
+
+stage('test')
+{
+ try
+ {
+    withMaven(maven:'MyMaven')
+    {
+    sh 'mvn test'
+}
+ }
+ finally {
+ junit 'target/surefire-reports/*.xml'
+ }
+}
+stage('package')
+{
+    withMaven(maven:'MyMaven')
+    {
+    sh 'mvn package'
+}
+}
+
+}
